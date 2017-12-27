@@ -11,8 +11,8 @@ namespace ApprendeApp
 		public App ()
 		{
 			InitializeComponent();
-
-
+            Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.IoniconsModule())
+                                  .With(new Plugin.Iconize.Fonts.MaterialModule());
             MainPage = new MainPage();
         }
 
