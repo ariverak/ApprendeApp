@@ -12,9 +12,7 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Command="{Binding MenuRedirectCommand}"  Text="¿Qué Aprendí?" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

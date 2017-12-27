@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="¿Qué Aprendí?"
+             x:Class="ApprendeApp.Views.ContentEvaluation">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1" Grid.RowSpan="2">
+                <Image.Source>
+                    <FileImageSource File="cloud.png" />
+                </Image.Source>
+            </Image>
+            <Label Margin="60,20,60,20" Text="¿Hoy Aprendio Ecuaciones de Primer Grado?"
+                   Grid.Row="1" Grid.RowSpan="2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="Medium" />
+                <Button Grid.Row="3"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        BorderRadius="20"  
+                        WidthRequest="40"
+                        HeightRequest="40"
+                        TextColor="White"
+                        Text="Si" />
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
